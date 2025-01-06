@@ -1,0 +1,165 @@
+/* ------------------
+----Style du home----
+------------------ */
+
+.home-grid-container {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+}
+
+    /* Colonne de gauche dans le home */
+
+.left-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    margin-left: 32px;
+}
+
+    /* Colonne centrale du home */
+
+.big-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75vh;
+}
+
+.big-title {
+    font-size: 70px;
+    margin-bottom: 16px;
+}
+
+.zone-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sous-titre {
+    font-family: Antic;
+    font-size: 32px;
+    color: #c468ac;
+    margin: 0px;
+}
+
+.decouvrir-btn {
+    color: #7D005C;
+    background: #FFF;
+    font-size: 20px;
+    font-family: Antic;
+    padding: 8px 40px;
+    border-radius: 30px;
+    box-shadow: #FFF 0px 0px 20px;  
+}
+
+.decouvrir-btn-position {
+    margin-top: 64px;
+}
+
+.decouvrir-btn:hover {
+    font-size: 25px;
+}
+
+.scroll-btn {
+    background: #FFF;
+    border-radius: 100%;
+    padding: 8px;
+    box-shadow: #FFF 0px 0px 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 32px;
+}
+
+.scroll-btn:hover {
+    padding: 12px;
+}
+
+    /* Colonne de gauche home */
+
+.right-grid {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    margin-right: 0px;
+    left: calc(100% - 32px) ;
+    bottom: 0px;
+}
+
+.code-decoration {
+    transform-origin: 0 100%;
+    rotate: -90deg;
+    margin-bottom: 32px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+/* --------------------------
+----Style de presentation----
+-------------------------- */
+
+.presentation-zone {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.presentation-title {
+    font-family: Audiowide;
+    font-size: 45px;
+}
+
+.presentation-title-placement {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.photo-and-text-zone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 128px;
+    margin-right: 128px;
+    margin-top: 64px;
+}
+
+.presentation-text {
+    width: 50%;
+}
+
+.round-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-image: url(../img/visage.jpg);
+    background-position: 10px;
+}
+
+.round-image:hover {
+    box-shadow: #7D005C 0px 0px 50px;
+}
+
+/* -------------- */
+/* Anim au scroll */
+/* -------------- */
+
+.presentation-zone,
+.home-grid-container{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.anim{
+    transition: 0.4s !important;
+    opacity: 1;
+    transform:translateX(0);
+}

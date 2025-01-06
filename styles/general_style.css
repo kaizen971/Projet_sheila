@@ -1,0 +1,177 @@
+/* ------------- */
+/* Style général */
+/* ------------- */
+
+body {
+    margin: 0;
+    background-image: url(../img/background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: antic;
+    cursor: crosshair;
+}
+
+* {
+    transition: 0.3s;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Audiowide;
+    color: #99ccf1;
+}
+
+p {
+    font-family: antic;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover {
+    color: #ff00ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* classe pour les couleurs de span */
+
+.magenta {
+    color: #FB12FF;
+}
+
+.pink {
+    color: #FD7CFF;
+}
+
+.purple {
+    color: #9A47FF;
+}
+
+/* --------------------
+----Style du header----
+-------------------- */
+
+header {
+    padding: 32px 0px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.logo-header {
+    width: 6%;
+    margin-left: 5%;
+}
+
+.name-header {
+    font-size: 40px;
+}
+
+.link-to-left {
+    margin-left: auto;
+}
+
+.link-margin {
+    margin-right: 5%;
+}
+
+.link-header {
+    font-size: 16px;
+}
+
+.link-header>h2:hover {
+    color: magenta;
+}
+
+/* --------------------
+----Style du footer----
+-------------------- */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.copyright>p {
+    margin: 0px;
+    font-size: 16px;
+    
+}
+
+.footer-right {
+    display: flex;
+    gap: 33px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 32px;
+}
+
+.logo-footer {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-link>a {
+    color: #FFF;
+    font-family: Antic;
+}
+
+.footer-link>a:hover {
+    color: #ff00ff;
+}
+
+.git-logo {
+    width: 32px;
+}
+
+.link-social-media {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-left>p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 32px;
+}
+
+.footer-zone {
+    margin-bottom: 32px;
+    margin-top: 128px;
+}
