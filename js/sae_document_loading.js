@@ -25,7 +25,7 @@ if (sae) {
     sae.apprentissages_critiques.forEach(acId => {
         const ac = SAE.apprentissages_critiques.find(a => a.id === acId);
         if (ac) {
-            ac_html += `<p><a href="../pdf/${num_sae}.pdf" target="_blank">${ac.id} : ${ac.description}</a></p>`;
+            ac_html += `<p><a href="../pdf/SAE${num_sae}.pdf" target="_blank">${ac.id} : ${ac.description}</a></p>`;
         }
     });
     document.querySelector(".AC").innerHTML = ac_html;
