@@ -137,15 +137,6 @@
             </div>
         </div>
     </main>
-
-    <!-- script permettant de mettre à jour la date de modification du contenu du site -->
-    <script>
-        const date = new Date(document.lastModified)
-        const options =  {year:"numeric", month:"long", day:'numeric', hour:"numeric"}
-        const formattedDate = date.toLocaleDateString("fr-FR", options)
-        document.querySelector(".maj").innerText = "Màj : " + formattedDate
-    </script>
-
     <script src="js/scroll_addclass.js"></script>
 
 </body>

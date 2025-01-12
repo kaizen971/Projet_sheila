@@ -76,42 +76,9 @@
         </footer>
     </div>
 
-    <script src="../js/dataSAE.js"></script>
+    <script src="../js/data.js"></script>
     <script src="../js/sae_loading.js"></script>
 
-    <!-- script permettant de mettre à jour la date de modifictaion du contenu du site -->
-    <script>
-        const date = new Date(document.lastModified)
-        const options =  {year:"numeric", month:"long", day:'numeric'}
-        const formattedDate = date.toLocaleDateString("fr-FR", options)
-        document.querySelector(".maj").innerText = "Màj : " + formattedDate
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const container = document.getElementById('saeContainer');
-            
-            // Pour chaque SAE dans les données
-            SAE.sae.forEach(sae => {
-                // Création des éléments pour chaque SAE
-                const saeLink = document.createElement('a');
-                saeLink.href = `sae-document.html?sae=${sae.numero}`;
-                saeLink.className = 'sae-color';
-                
-                saeLink.innerHTML = `
-                    <div class="sae">
-                        <h3>SAE ${sae.numero}</h3>
-                        <p>${sae.titre}</p>
-                        <div class="competences">
-                            ${sae.competences.length > 1 ? `<marquee>${sae.competences.join(', ')}</marquee>` : sae.competences.join(', ')}
-                        </div>
-                    </div>
-                `;
-                
-                container.appendChild(saeLink);
-            });
-        });
-    </script>
 </body>
 
 </html>
