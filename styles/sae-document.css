@@ -61,7 +61,7 @@ h3 {
 .ressources {
     display: flex;
     flex-direction: column;
-    background: #7D005C;
+    background: #6f6e6f;
     padding: 32px;
     border-radius: 20px;
     width: 300px;
