@@ -133,21 +133,7 @@
     margin-top: 64px;
 }
 
-.presentation-text {
-    width: 50%;
-}
 
-.round-image {
-    width: 350px;
-    height: 350px;
-    border-radius: 100%;
-    background-image: url(../img/visage.jpg);
-    background-position: 10px;
-}
-
-.round-image:hover {
-    box-shadow: #7D005C 0px 0px 50px;
-}
 
 /* -------------- */
 /* Anim au scroll */
