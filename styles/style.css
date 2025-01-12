@@ -42,12 +42,10 @@
 .sous-titre {
     font-family: Antic;
     font-size: 32px;
-    color: #c468ac;
     margin: 0px;
 }
 
 .decouvrir-btn {
-    color: #7D005C;
     background: #FFF;
     font-size: 20px;
     font-family: Antic;
@@ -107,10 +105,10 @@
 -------------------------- */
 
 .presentation-zone {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    text-align: center;
 }
 
 .presentation-title {
@@ -121,7 +119,6 @@
 .presentation-title-placement {
     display: flex;
     justify-content: center;
-    margin-top: 64px;
 }
 
 .photo-and-text-zone {
@@ -130,9 +127,13 @@
     align-items: center;
     margin-left: 128px;
     margin-right: 128px;
-    margin-top: 64px;
 }
 
+.logo-image {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
 
 
 /* -------------- */
